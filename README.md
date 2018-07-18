@@ -28,7 +28,7 @@ bias.bias(5.4, 4);
                                                                       
 bias.biasWithTenths - round based on tenths column given    
 
-`bias.biasWithTents({givem-value}, {tenth-posiiton(defualt 0)},         
+`bias.biasWithTents({given-value}, {tenth-position(default 0)},         
 {bias-number(default 5) })`                                             
                                                                        
 ```                                                                     
