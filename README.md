@@ -3,6 +3,41 @@ Bias Round To
 
 Round a number to the floor or ceiling, based on your own set bias
 
+## Usage
+
+`var bias = require('bias');`
+                                                                
+bias - round up or down depending on number in tenths column           
+
+`bias.bias({given-value},{bias-number(default 5)})`                     
+                                                                        
+```                                                                     
+bias.bias(5.4);                                                         
+                                                                        
+// returns 5                                                            
+                                                                       
+```                                                                     
+                                                                       
+Add a bias number                                                       
+                                                                     
+```                                                                     
+bias.bias(5.4, 4);                                                      
+                                                                     
+//return 6                                                              
+```                                                                     
+                                                                      
+bias.biasWithTenths - round based on tenths column given    
+
+`bias.biasWithTents({givem-value}, {tenth-posiiton(defualt 0)},         
+{bias-number(default 5) })`                                             
+                                                                       
+```                                                                     
+bias.biasWithTenths(.5555, -3, 4);                                      
+                                                                    
+// returns .556                                                         
+                                                                         
+```              
+
 ## Tests
 
   `npm test`
