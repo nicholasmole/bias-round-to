@@ -1,5 +1,5 @@
 {
-  "name": "bias-round-to",
+  "name": "bias-rounding",
   "version": "0.1.0",
   "description": "Round a number to the floor or ceiling, based on your own set bias",
   "main": "index.js",
@@ -12,6 +12,10 @@
   ],
   "author": "Nicholas Mole",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicholasmole/bias-rounding"
+  },
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^5.2.0"
