@@ -3,7 +3,7 @@ var bias = require('../index');
 
 describe('#biasRoundTo with only number given', function() {
 	it('should convert number 1.5 to 2', function() {
-			var result = bias.bias(1.5);
+			var result = bias(1.5);
 			expect(result).to.equal(2);
 	});
 	it('should convert number 1.4 to 1', function() {
@@ -25,30 +25,30 @@ describe('#biasRoundTo with number and bias given', function() {
 
 describe('#biasRoundToreturn number with thousandth number', function() {
 	it('return 55.6', function() {
-			var result = bias.biasWithTenths(55.55, -1);
+			var result = bias.biasIn(55.55, -1);
 			expect(result).to.equal(55.6);
 	});
 	it('return .556', function() {
-		var result = bias.biasWithTenths(.5555, -3);
+		var result = bias.biasIn(.5555, -3);
 		expect(result).to.equal(.556);
 	});
 });	
 
 describe('#biasRoundToreturn number with thousandth number and bias given', function() {
 	it('return 55.6', function() {
-			var result = bias.biasWithTenths(55.55, -1, 6);
+			var result = bias.biasIn(55.55, -1, 6);
 			expect(result).to.equal(55.5);
 	});
 	it('return .556', function() {
-		var result = bias.biasWithTenths(.5555, -3, 6);
+		var result = bias.biasIn(.5555, -3, 6);
 		expect(result).to.equal(.555);
 	});
 	it('return 55.6', function() {
-		var result = bias.biasWithTenths(55.55, -1, 4);
+		var result = bias.biasIn(55.55, -1, 4);
 		expect(result).to.equal(55.6);
 });
 it('return .556', function() {
-	var result = bias.biasWithTenths(.5555, -3, 4);
+	var result = bias.biasIn(.5555, -3, 4);
 	expect(result).to.equal(.556);
 });
 });	

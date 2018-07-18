@@ -1,6 +1,6 @@
 'use strict';
 var bias = require('./lib/bias');
-var biasWithTenth = require('./lib/bias-with-tenth');
+var biasIn = require('./lib/bias-in-place-value');
 /**
  * Adds commas to a number
  * @param {number} givenNumber
@@ -12,7 +12,7 @@ module.exports = {
     return bias(givenNumber, biasNumber);
   },
 
-	biasWithTenths: function(givenNumber, tenth = 0, biasNumber = 5)  {
-    return biasWithTenth(givenNumber, tenth, biasNumber);
+	biasIn: function(givenNumber, tenth = 0, biasNumber = 5)  {
+    return biasIn(givenNumber, tenth, biasNumber);
   }
 };

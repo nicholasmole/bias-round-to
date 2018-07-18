@@ -14,8 +14,8 @@ bias - round up or down depending on number in tenths column
 ```                                                                     
 bias.bias(5.4);                                                         
                                                                         
-// returns 5                                                            
-                                                                       
+// returns 5
+                               
 ```                                                                     
                                                                        
 Add a bias number                                                       
@@ -26,13 +26,13 @@ bias.bias(5.4, 4);
 //return 6                                                              
 ```                                                                     
                                                                       
-bias.biasWithTenths - round based on tenths column given    
+bias.biasIn - round based on tenths column given    
 
 `bias.biasWithTents({given-value}, {tenth-position(default 0)},         
 {bias-number(default 5) })`                                             
                                                                        
 ```                                                                     
-bias.biasWithTenths(.5555, -3, 4);                                      
+bias.biasIn(.5555, -3, 4);                                      
                                                                     
 // returns .556                                                         
                                                                          
