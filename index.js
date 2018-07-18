@@ -1,7 +1,6 @@
 'use strict';
-var _math = require('./bias-round-to/toTenths');
-var bias = require('./bias-round-to/bias');
-var biasWithTenth = require('./bias-round-to/biasWithTenth');
+var bias = require('./lib/bias');
+var biasWithTenth = require('./lib/bias-with-tenth');
 /**
  * Adds commas to a number
  * @param {number} givenNumber
