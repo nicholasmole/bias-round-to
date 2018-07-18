@@ -1,4 +1,4 @@
-Bias Round To
+Bias Rounding
 =========
 
 Round a number to the floor or ceiling, based on your own set bias
