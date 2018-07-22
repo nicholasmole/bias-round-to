@@ -1,6 +1,6 @@
 {
   "name": "bias-rounding",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Round a number to the floor or ceiling, based on your own set bias",
   "main": "index.js",
   "scripts": {
